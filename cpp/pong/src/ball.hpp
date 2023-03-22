@@ -7,7 +7,7 @@
 class Ball : public godot::Area2D {
 	GODOT_CLASS(Ball, godot::Area2D)
 
-	const real_t DEFAULT_SPEED = 100;
+	const real_t DEFAULT_SPEED = 500;
 	real_t _speed = DEFAULT_SPEED;
 	godot::Vector2 _initial_pos;
 

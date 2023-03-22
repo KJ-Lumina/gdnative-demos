@@ -31,6 +31,7 @@ void Paddle::_on_area_entered(Ball *p_ball) {
 }
 
 void Paddle::_register_methods() {
+
 	godot::register_method("_ready", &Paddle::_ready);
 	godot::register_method("_process", &Paddle::_process);
 	godot::register_method("_on_area_entered", &Paddle::_on_area_entered);

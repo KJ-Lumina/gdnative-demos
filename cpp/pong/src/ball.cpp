@@ -18,6 +18,8 @@ void Ball::reset() {
 }
 
 void Ball::_register_methods() {
+	godot::register_property<Ball, real_t>("Speed", &Ball::_speed, 100);
+
 	godot::register_method("_ready", &Ball::_ready);
 	godot::register_method("_process", &Ball::_process);
 	godot::register_method("reset", &Ball::reset);
